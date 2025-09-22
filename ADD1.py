@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import sklearn as sk
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -185,3 +186,4 @@ if uploaded_file:
         ax.set_title('Courbe ROC')
         ax.legend(loc='lower right')
         st.pyplot(fig)
+
